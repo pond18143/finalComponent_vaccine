@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="4.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+    <servlet>
+        <servlet-name>vaccineServlet</servlet-name>
+        <servlet-class>servlet.vaccineServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>insertVaccine</servlet-name>
+        <servlet-class>servlet.insertVaccine</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>updateVaccine</servlet-name>
+        <servlet-class>servlet.updateVaccine</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>deleteVaccine</servlet-name>
+        <servlet-class>servlet.deleteVaccine</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>vaccineServlet</servlet-name>
+        <url-pattern>/vaccine</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>insertVaccine</servlet-name>
+        <url-pattern>/insert</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>updateVaccine</servlet-name>
+        <url-pattern>/update</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>deleteVaccine</servlet-name>
+        <url-pattern>/delete</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
